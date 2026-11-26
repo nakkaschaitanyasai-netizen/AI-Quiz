@@ -12,7 +12,7 @@ const QuizResult = () => {
   useEffect(() => {
     const fetchResult = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}api/attempts/${id}`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/attempts/${id}`, {
           headers: {
             Authorization: `Bearer ${Cookie.get("token")}`,
           },

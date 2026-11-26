@@ -36,7 +36,7 @@ const QuizPlay = () => {
   useEffect(() => {
     const fetchQuiz = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}api/quizzes/${id}`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/quizzes/${id}`, {
           headers: {
             Authorization: `Bearer ${Cookie.get("token")}`,
           },

@@ -10,7 +10,7 @@ const HistoryPage = () => {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}api/attempts`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/attempts`, {
           headers: {
             Authorization: `Bearer ${Cookie.get("token")}`,
           },

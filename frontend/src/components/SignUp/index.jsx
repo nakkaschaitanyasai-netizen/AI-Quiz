@@ -23,7 +23,7 @@ export default function Signup() {
     e.preventDefault();
     setSubmitting(true);
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}auth/signup`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
