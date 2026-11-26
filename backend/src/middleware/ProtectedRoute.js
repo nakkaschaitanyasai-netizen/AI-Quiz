@@ -1,0 +1,21 @@
+import jwt from "jsonwebtoken";
+
+const protectedRoute = (req, res, next) => {
+  const token = req.cookies.token || req.headers.authorization?.split(" ")[1];
+  try {
+    if (!token) {
+      return res.status(401).json({ ok: false, message: "Unauthorized" });
+    }
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    if (!decoded) {
+      return res.status(401).json({ ok: false, message: "Unauthorized - Invalid Token" });
+    }
+    req.user = decoded;
+    next();
+  } catch (error) {
+    console.log("Error in protectedRoute middleware:", error.message);
+    return res.status(401).json({ ok: false, message: "Unauthorized" });
+  }
+};
+
+export default protectedRoute;

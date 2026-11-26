@@ -1,0 +1,188 @@
+.result-shell {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding: 32px 20px 64px;
+}
+
+.result-wrapper {
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.result-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-back-btn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  padding: 7px 14px;
+  border-radius: 9px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.result-home-link {
+  color: #0d9488;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.result-summary-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.result-topic-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0d9488;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.result-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-top: 6px;
+}
+
+.result-student-line {
+  font-size: 13.5px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.result-stats-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+.result-stat span {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.result-stat strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.stat-good {
+  color: #0d9488 !important;
+}
+
+.stat-warn {
+  color: #d97706 !important;
+}
+
+.review-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.review-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.review-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.review-card-head h3 {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.status-pill {
+  flex-shrink: 0;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+.pill-ok {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.pill-no {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.review-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.review-option {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #334155;
+  background: #ffffff;
+}
+
+.review-correct {
+  border-color: #16a34a;
+  background: #f0fdf4;
+  color: #14532d;
+  font-weight: 600;
+}
+
+.review-wrong {
+  border-color: #dc2626;
+  background: #fef2f2;
+  color: #7f1d1d;
+}
+
+.review-explanation {
+  margin-top: 12px;
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #475569;
+}

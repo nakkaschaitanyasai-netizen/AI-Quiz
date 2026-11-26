@@ -1,0 +1,128 @@
+.history-shell {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding: 32px 20px 60px;
+}
+
+.history-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.history-back-link {
+  display: inline-block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #0d9488;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.history-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.history-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.history-kpi {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+
+.history-kpi span {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.history-kpi strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.kpi-accent {
+  color: #0d9488 !important;
+}
+
+.history-empty {
+  background: #ffffff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+  padding: 36px;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.history-table-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow-x: auto;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.history-table th {
+  text-align: left;
+  padding: 13px 16px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.history-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+.acc-badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.acc-badge-ok {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.acc-badge-warn {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.review-link {
+  color: #0d9488;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.review-link:hover {
+  text-decoration: underline;
+}

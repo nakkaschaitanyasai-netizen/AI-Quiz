@@ -1,0 +1,238 @@
+.preview-panel {
+  background: #ffffff;
+  border: 1.5px solid #99f6e4;
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 36px;
+  box-shadow: 0 12px 30px rgba(13, 148, 136, 0.08);
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.preview-badge {
+  display: inline-block;
+  background: #ccfbf1;
+  color: #0f766e;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+.preview-heading {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-top: 8px;
+}
+
+.preview-sub {
+  font-size: 13.5px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.preview-cancel-btn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.preview-cancel-btn:hover {
+  background: #f1f5f9;
+}
+
+.preview-title-box {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.preview-title-box label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.preview-title-input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+.preview-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.preview-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 18px;
+  background: #ffffff;
+  transition: opacity 0.15s ease;
+}
+
+.preview-card-selected {
+  border-color: #cbd5e1;
+}
+
+.preview-card-muted {
+  opacity: 0.55;
+  background: #f8fafc;
+}
+
+.preview-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.preview-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.preview-checkbox-label input {
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+  accent-color: #0d9488;
+}
+
+.preview-remove-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.preview-remove-btn:hover {
+  background: #fee2e2;
+}
+
+.preview-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.preview-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 9px;
+  border: 1px solid #e2e8f0;
+  font-size: 13.5px;
+  color: #334155;
+}
+
+.preview-option-correct {
+  border-color: #16a34a;
+  background: #f0fdf4;
+  color: #14532d;
+  font-weight: 600;
+}
+
+.correct-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #15803d;
+  flex-shrink: 0;
+}
+
+.preview-explanation {
+  margin-top: 10px;
+  background: #f8fafc;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  color: #475569;
+}
+
+.preview-empty {
+  margin-top: 20px;
+  padding: 28px;
+  text-align: center;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.preview-footer {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.preview-count {
+  font-size: 14px;
+  color: #475569;
+}
+
+.preview-publish-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #0d9488;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.preview-publish-btn:hover {
+  background: #0f766e;
+}
+
+.preview-publish-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
