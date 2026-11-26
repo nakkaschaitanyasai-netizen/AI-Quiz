@@ -31,8 +31,8 @@ const HomePage = () => {
       };
 
       const [meRes, quizRes] = await Promise.all([
-        fetch(`${import.meta.env.VITE_API_URL}auth/me`, { headers }),
-        fetch(`${import.meta.env.VITE_API_URL}api/quizzes`, { headers }),
+        fetch(`${import.meta.env.VITE_API_URL}/auth/me`, { headers }),
+        fetch(`${import.meta.env.VITE_API_URL}/api/quizzes`, { headers }),
       ]);
 
       const meData = await meRes.json();
@@ -70,7 +70,7 @@ const HomePage = () => {
     setGenerating(true);
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}api/quizzes/preview`,
+        `${import.meta.env.VITE_API_URL}/api/quizzes/preview`,
         {
           method: "POST",
           headers: {
@@ -105,7 +105,7 @@ const HomePage = () => {
     setPublishing(true);
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}api/quizzes/publish`,
+        `${import.meta.env.VITE_API_URL}/api/quizzes/publish`,
         {
           method: "POST",
           headers: {

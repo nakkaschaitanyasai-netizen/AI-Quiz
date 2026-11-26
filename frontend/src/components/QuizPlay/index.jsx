@@ -88,7 +88,7 @@ const QuizPlay = () => {
     const timeTaken = Math.max(0, totalLimit - (timeLeft ?? 0));
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}api/quizzes/${id}/submit`,
+        `${import.meta.env.VITE_API_URL}/api/quizzes/${id}/submit`,
         {
           method: "POST",
           headers: {
